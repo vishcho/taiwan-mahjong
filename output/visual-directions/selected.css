@@ -1,0 +1,60 @@
+/* C supplies all geometry; these overrides apply B's palette and materials. */
+.theme-selected {
+  --felt: #164e43;
+  --felt-deep: #12473d;
+  --paper: #f4efdf;
+  --ivory: #eee6d1;
+  --gold: #e4d5ae;
+  --ink: #3e4435;
+  background: var(--felt);
+  color: #f3eee0;
+  border-color: #2c3431;
+}
+.theme-selected::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 150 150' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.035' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: -1;
+}
+.theme-selected .brand-symbol { color: #e9d9a7; border-color: #c8b37b; box-shadow: 0 3px 0 #073e34; }
+.theme-selected .brand-subtitle { color: #c0d0ba; }
+.theme-selected .mode-switch { background: #0d3e35; }
+.theme-selected .mode-switch button.active { background: var(--gold); color: #26453a; }
+.theme-selected .result { background: var(--paper); color: var(--ink); border-color: #d9d4c2; border-left-color: #b8794e; }
+.theme-selected .result-tag { color: #9c5634; }
+.theme-selected .shanten-badge { color: #426448; border-left-color: #d9d4c2; }
+.theme-selected .shanten-badge span { color: #526448; }
+.theme-selected .metrics, .theme-selected .metric + .metric { border-color: #d9d4c2; }
+.theme-selected .metric strong { color: #365e42; }
+.theme-selected .metric span { color: #58644e; }
+.theme-selected .waiting-head { color: #f0e4c5; }
+.theme-selected .bar-row { border-color: #496f5f; }
+.theme-selected .count-bar i { background: var(--gold); }
+.theme-selected .count-bar i.empty { background: #496f5f; }
+.theme-selected .bar-count { color: #f0e4c5; }
+.theme-selected .hand-section { background: var(--felt-deep); border-color: #496f5f; }
+.theme-selected .tile { background: linear-gradient(145deg,#fff9e7,#e9e0c6); border-color: #e6d9b9; box-shadow: 0 3px 0 #aab49a; }
+.theme-selected .tile.chosen { background: #fff0c9; border-color: #ca793f; box-shadow: 0 3px 0 #c7a370; }
+.theme-selected .details-link { color: #f0e4c5; }
+.theme-selected .keyboard { background: var(--ivory); color: #555b43; border-top-color: #c4b38a; }
+.theme-selected .input-tabs button.active { color: #995a30; }
+.theme-selected .suit-tabs button { background: #e4d9bf; color: #555b43; }
+.theme-selected .suit-tabs button.active { background: #275747; color: #fff7e4; }
+.theme-selected .key { background: #fff8e8; border-color: #d7cdb4; box-shadow: 0 2px 0 #c5bba0; }
+.theme-selected .key.selected { background: #fff0c9; }
+.theme-selected .safe-area { background: var(--ivory); color: #345543; }
+.theme-selected .toast { background: #eee6d1; color: #26453a; }
+.theme-selected .drawer { background: var(--paper); color: var(--ink); }
+.theme-selected .drawer p { color: #58644e; }
+.theme-selected .detail-count { background: #e4ddc8; }
+.theme-selected .drawer .example-note { color: #73765e; }
+.theme-selected .drawer-handle { background: #b6b79e; }
+[data-preview="selected"] .letter { width: 38px; font-size: 10px; }
+[data-preview="selected"] .view-switch a { display: flex; align-items: center; min-height: 44px; padding: 0 15px; color: #5a6a5c; font-size: 11px; text-decoration: none; }
+@media (max-width: 760px) {
+  [data-preview="selected"] .view-switch button { flex: 1; }
+  [data-preview="selected"] .view-switch a { font-size: 10px; padding: 0 9px; }
+  [data-preview="selected"].focus .view-switch a { display: none; }
+}
