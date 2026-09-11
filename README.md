@@ -4,6 +4,8 @@
 
 目前為規格階段，尚未實作。完整定義見 [V1 spec](taiwan-mahjong-shanten-v1-spec.md)。
 
+工作順序與驗收條件見 [實作計畫](output/implementation-plan.md)。
+
 ## V1 功能
 
 - 16 張狀態：向聽數、有效牌與剩餘張數、改良牌、最佳牌型拆解。
