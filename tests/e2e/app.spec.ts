@@ -54,9 +54,13 @@ test("public discard called into pon is counted once and can be repaired", async
     .getByRole("dialog")
     .getByRole("button", { name: "副露", exact: true })
     .click();
-  await page.getByRole("combobox", { name: "類型", exact: true }).selectOption("pon");
+  await page
+    .getByRole("combobox", { name: "類型", exact: true })
+    .selectOption("pon");
   await page.getByLabel("副露文字").fill("東東東");
-  await page.getByRole("combobox", { name: "連結被叫走捨牌" }).selectOption({ index: 1 });
+  await page
+    .getByRole("combobox", { name: "連結被叫走捨牌" })
+    .selectOption({ index: 1 });
   await page.getByRole("button", { name: "加入副露" }).click();
   await page.getByRole("button", { name: "關閉抽屜" }).click();
   await expect(page.getByTestId("ukeire")).toHaveText("07");

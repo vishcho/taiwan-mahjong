@@ -1,5 +1,8 @@
+node_modules/
 *.md
-output/visual-directions/
+output/
 app/public/
 app/dist/
 package-lock.json
+*.tsbuildinfo
+.DS_Store
