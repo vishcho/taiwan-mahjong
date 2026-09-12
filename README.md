@@ -1,5 +1,8 @@
 # 台灣麻將向聽數分析器
 
+[![CI](https://github.com/vishcho/taiwan-mahjong/actions/workflows/ci.yml/badge.svg)](https://github.com/vishcho/taiwan-mahjong/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 台灣 16 張麻將牌效率工具，依手牌與已知盤面分析向聽數、有效牌、改良牌及最佳捨牌。
 
 目前已提供 **V0.1 可操作版本**。第一版先完成輸入、分析、盤面編輯、分享與 PWA；完整 V1 驗收仍有待辦，見 [交付紀錄](output/first-version.md)。完整定義見 [V1 spec](taiwan-mahjong-shanten-v1-spec.md)。
