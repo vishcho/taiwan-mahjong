@@ -1,0 +1,15 @@
+{
+  "name": "app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@taiwan-mahjong/core": "*",
+    "fflate": "0.8.3",
+    "vue": "3.5.42"
+  }
+}

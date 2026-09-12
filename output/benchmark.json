@@ -1,0 +1,35 @@
+{
+  "environment": {
+    "node": "v22.22.1",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "initializationMs": 34.964740000000006,
+  "heapUsedBytes": 53163648,
+  "benchmarks": [
+    {
+      "hand": "123456m789p12345s77z",
+      "candidates": 0,
+      "medianMs": 7.335623999999996,
+      "p95Ms": 16.714812000000023
+    },
+    {
+      "hand": "1234569m789p12345s77z",
+      "candidates": 16,
+      "medianMs": 76.07401100000004,
+      "p95Ms": 81.57302099999998
+    },
+    {
+      "hand": "1122334455667788m",
+      "candidates": 0,
+      "medianMs": 97.40080499999999,
+      "p95Ms": 107.84953099999984
+    },
+    {
+      "hand": "147m258p369s1234566z",
+      "candidates": 0,
+      "medianMs": 0.5509609999999157,
+      "p95Ms": 0.8371240000001308
+    }
+  ]
+}

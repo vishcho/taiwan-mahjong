@@ -1,0 +1,8 @@
+node_modules/
+app/dist/
+app/public/tables/
+output/test-results/
+output/playwright-report/
+output/coverage/
+*.tsbuildinfo
+.DS_Store

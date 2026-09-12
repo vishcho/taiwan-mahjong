@@ -1,0 +1,43 @@
+{
+  "name": "taiwan-mahjong",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "app",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.22.1 <23"
+  },
+  "scripts": {
+    "dev": "npm run tables && npm run dev -w app",
+    "build": "npm run tables && npm run typecheck && npm run build -w app",
+    "preview": "npm run preview -w app --",
+    "tables": "node --import tsx packages/mahjong-core/scripts/generate-tables.ts",
+    "typecheck": "tsc --noEmit -p packages/mahjong-core && vue-tsc --noEmit -p app && tsc --noEmit -p tsconfig.tools.json",
+    "lint": "eslint .",
+    "format": "prettier --write '**/*.{json,js,ts}'",
+    "test": "vitest run",
+    "test:cross": "CROSS_COUNT=20000 vitest run packages/mahjong-core/tests/cross.test.ts",
+    "test:e2e": "playwright test",
+    "benchmark": "node --import tsx packages/mahjong-core/scripts/benchmark.ts",
+    "icons": "node --import tsx packages/mahjong-core/scripts/generate-icons.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.63.0",
+    "@resvg/resvg-js": "2.6.2",
+    "@types/node": "22.20.2",
+    "@vitejs/plugin-vue": "6.0.8",
+    "eslint": "10.10.0",
+    "eslint-plugin-vue": "10.11.0",
+    "prettier": "3.9.6",
+    "tsx": "4.23.13",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.0",
+    "vite": "8.3.0",
+    "vite-plugin-pwa": "1.3.0",
+    "vitest": "5.0.0",
+    "vue-tsc": "3.3.11"
+  }
+}

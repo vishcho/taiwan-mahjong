@@ -1,6 +1,8 @@
 # 台灣麻將向聽數分析器 V1 實作計畫
 
-依據 [V1 spec](../taiwan-mahjong-shanten-v1-spec.md) 與已定版的 [B 配色 × C 排版](visual-directions/selected.html)。目前只有文件與固定示例視覺稿，尚無 Vue 專案或分析引擎。
+> **2026-09-12：已先交付 V0.1 可操作版本。** 依使用者「先出一個版本，有錯誤也沒關係」的指示，交付範圍調整為可啟動的分析器，完整 V1 驗收保留待辦。實作內容與未驗證項目見 [第一版交付紀錄](first-version.md)；下列清單保留為完整 V1 的驗收基準，不代表第一版全部完成。
+
+依據 [V1 spec](../taiwan-mahjong-shanten-v1-spec.md) 與已定版的 [B 配色 × C 排版](visual-directions/selected.html)。此計畫制定時只有文件與固定示例視覺稿，尚無 Vue 專案或分析引擎。
 
 實作順序：**資料模型 → reference 引擎 → 查表引擎 → 完整分析 → 手機介面 → 分享與離線 → 驗收**。核心測試通過後才接 UI。
 

@@ -1,0 +1,5 @@
+*.md
+output/visual-directions/
+app/public/
+app/dist/
+package-lock.json

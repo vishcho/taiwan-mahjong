@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": { "types": ["node"], "lib": ["ES2022", "DOM"] },
+  "include": [
+    "*.ts",
+    "app/vite.config.ts",
+    "packages/mahjong-core/scripts/**/*.ts",
+    "packages/mahjong-core/tests/**/*.ts",
+    "tests/**/*.ts"
+  ]
+}

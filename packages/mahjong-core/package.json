@@ -1,0 +1,10 @@
+{
+  "name": "@taiwan-mahjong/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "fflate": "0.8.3"
+  }
+}
